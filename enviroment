@@ -21,4 +21,13 @@
 	   proxy=http://172.16.71.133:808
 	   #proxy_username=代理服务器用户名 (没有不填）
          #proxy_password=代理服务器密码 (没有不填)
-	
+
+3.虚拟机与主机无法共享文件(没有/mnt/hgfs目录)
+	1).点击重新安转VMware Tools
+	2).进入VMware Tools目录，拷贝安装包 cp VMwareTools-10.3.10-13959562.tar.gz /mnt/cdrom
+	3).cd /mnt/cdrom,sudo tar -zxvf VMwareTools-10.3.10-13959562.tar.gz
+	4).安装sudo vmware-distrib/vmware-install.pl
+	5).cd /mnt/hgfs, ls
+
+4.安装git
+	yum -y install git
