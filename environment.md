@@ -47,3 +47,12 @@ git config --global https.proxy https://172.18.33.48:808
 sudo yum install -y gcc-C++
 sudo yum install gdb
 ```
+## UNP编程环境
+按readme.md编译后,拷贝库
+```
+sudo cp lib/libunp.a lib64
+```
+编译
+```
+gcc timeClient.c -Li. -lunp -o -c
+```
